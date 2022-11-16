@@ -14,7 +14,7 @@ public class HomeWorkApp {
     }
 
     private static void printThreeWords() {    //2
-        System.out.println( "Orange\n" + "Banana\n" +  "Apple"); }
+        System.out.printf("Orange%nBanana%nApple"); }
 
     public static void checkSumSign() {     //3
         String sumPositive = "Сума позитивна";
@@ -23,7 +23,7 @@ public class HomeWorkApp {
         int a = (int) (Math.random() * 20 - 10);
         int b = (int) (Math.random() * 20 - 10);
 
-        System.out.print("[" + (a + b) + "] ");
+        System.out.printf("[%d] ",(a+b));
 
         System.out.println(((a + b) >= 0) ? sumPositive : sumNegative);
     }
@@ -35,7 +35,7 @@ public class HomeWorkApp {
 
         int value = (int) (Math.random() * 300 - 150);
 
-        System.out.print("[" + value + "] ");
+        System.out.printf("[%d] ", value);
 
         if (value <= 0) {
             System.out.println(redMessage);
@@ -54,7 +54,7 @@ public class HomeWorkApp {
         int a = (int) (Math.random() * 20 - 10);
         int b = (int) (Math.random() * 20 - 10);
 
-        System.out.printf("[%d][%d]", a, b);
+        System.out.printf("[%d][%d] ", a, b);
 
 
         System.out.println(a > b ? compareA : compareB);
