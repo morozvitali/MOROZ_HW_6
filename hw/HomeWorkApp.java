@@ -9,6 +9,7 @@ public class HomeWorkApp {
         System.out.println(compareSum(10, 2));
         compareZero(0);
         System.out.println(searchNegative(-5));
+        printString("Please repeat that", 3);
         System.out.println(intercalary(2022));
     }
 
@@ -53,7 +54,8 @@ public class HomeWorkApp {
         int a = (int) (Math.random() * 20 - 10);
         int b = (int) (Math.random() * 20 - 10);
 
-        System.out.print("[" + a + "][" + b + "] ");
+        System.out.printf("[%d][%d]", a, b);
+
 
         System.out.println(a > b ? compareA : compareB);
     }
