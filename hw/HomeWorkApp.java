@@ -10,7 +10,7 @@ public class HomeWorkApp {
         compareZero(0);
         System.out.println(searchNegative(-5));
         printString("Please repeat that", 3);
-        System.out.println(intercalary(2022));
+        System.out.println(intercalary(2100));
     }
 
     private static void printThreeWords() {    //2
@@ -63,11 +63,7 @@ public class HomeWorkApp {
 
     public static boolean compareSum(int a, int b) {  //6
 
-        if (((a + b) < 20) && ((a + b) > 10)) {
-            return true;
-        } else {
-            return false;
-        }
+            return ((a + b) < 20) && ((a + b) > 10);
 
     }
 
@@ -80,27 +76,18 @@ public class HomeWorkApp {
 
 
     public static boolean searchNegative(int a) { //8
-        return (a < 0) ? true : false;
+        return (a < 0);
     }
 
 
     public static void printString(String textForPrint, int value) {  //9
-        for (int i = 0; i < value; i++) {
-            System.out.println(textForPrint);
+        for (int i = 0; i < value; i++) {System.out.println(textForPrint);
         }
     }
 
 
     public static boolean intercalary(int year) {     //10
-        if (year % 400 == 0) {
-            return true;
-        }
-
-        if ((year % 4 == 0) && (year % 100 != 0)) {
-            return true;
-        } else {
-            return false;
-        }
+        return ((year % 400 == 0) || (year % 4 == 0) && (year % 100 != 0));
     }
 
 
